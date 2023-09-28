@@ -1,0 +1,78 @@
+<html>
+<body>
+<script>
+
+ function san(num){
+     let sum=0;
+	  num=121;
+	 let x=num;
+	 
+	 while(num>0){
+	    let rem=num%10;
+		num=(num-rem)/10;
+		sum=(sum*10)+rem;
+	   console.log(num);
+	 }
+	 console.log(sum);
+	 if(x===sum){
+	     console.log('given in palintrome');
+	 }
+	 else{
+	     console.log('not palindrome');
+	 }
+ }
+ 
+   san(121)
+  
+  
+  
+  let sum=0,
+   num=456,
+   count=0;
+   while(num>0){
+    let rem=num%10;
+	num=(num-rem)/10;
+	
+	sum=sum+rem;
+	 count++
+	
+   }
+   let avg=sum/count ;
+   console.log(avg)
+   
+   
+   
+     function san(num){
+       
+	   let sum=0;
+         num=1234;
+	   while(num>0){
+	    let rem=num%10;
+		num=(num-rem)/10;
+		 num=(num/10);
+		 if(rem%2!=0){
+		    sum+=rem;
+		 }
+		 
+	   }
+	   console.log(sum);
+   }
+
+   san(1234)
+   
+   
+      let sum=0;
+         num=4567;
+	   while(num>0){
+	     let rem=num%10;
+		num=(num-rem)/10;
+		 if(rem%2==0){
+		    sum+=rem;
+		 }
+		 
+	   }
+	    console.log(sum);
+
+</script>
+</body>
+</html>
